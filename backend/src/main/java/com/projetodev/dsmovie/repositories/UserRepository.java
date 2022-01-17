@@ -1,7 +1,8 @@
 package com.projetodev.dsmovie.repositories;
 
-import com.projetodev.dsmovie.entities.Movies;
+import com.projetodev.dsmovie.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MovieRepository extends JpaRepository<Movies, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByEmail(String email);
 }

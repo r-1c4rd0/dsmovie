@@ -1,4 +1,7 @@
-package com.projetodev.dsmovie.repository;
+package com.projetodev.dsmovie.repositories;
 
-public class MovieRepository {
+import com.projetodev.dsmovie.entities.Movies;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MovieRepository extends JpaRepository<Movies, Long> {
 }
